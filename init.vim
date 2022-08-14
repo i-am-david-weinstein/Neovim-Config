@@ -21,6 +21,7 @@ call plug#begin("~/.vim/plugged")
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-fugitive'
 	Plug 'junegunn/rainbow_parentheses.vim'
+	Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
