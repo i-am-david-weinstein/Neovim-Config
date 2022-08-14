@@ -21,7 +21,7 @@ call plug#begin("~/.vim/plugged")
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-fugitive'
 	Plug 'junegunn/rainbow_parentheses.vim'
-	Plug 'airblade/vim-gitgutter'
+	Plug 'mhinz/vim-signify'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
@@ -97,6 +97,14 @@ let g:airline_theme='fruit_punch'
 let g:airline_powerline_fonts = 1
 set undofile
 set undodir^=~/.vim/backup//
+let g:signify_sign_add = '│'
+let g:signify_sign_delete = '│'
+let g:signify_sign_change = '│'
+highlight SignifySignAdd ctermfg=green guifg=#00ff00 cterm=NONE gui=NONE
+highlight SignifySignDelte ctermfg=red guifg=#ff0000 cterm=NONE gui=NONE
+highlight SignifySignChange ctermfg=yellow guifg=#ffff00 cterm=NONE gui=NONE
+set signcolumn=yes
+highlight clear SignColumn
 
 " ** Key Mappings **
 nnoremap <Space> <nop>
