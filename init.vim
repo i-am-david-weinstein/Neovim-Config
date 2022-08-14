@@ -20,6 +20,7 @@ call plug#begin("~/.vim/plugged")
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-fugitive'
+	Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
@@ -93,8 +94,6 @@ colorscheme jellybeans
 set encoding=UTF-8
 let g:airline_theme='fruit_punch'
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#hunks#enabled=0
 set undofile
 set undodir^=~/.vim/backup//
 
