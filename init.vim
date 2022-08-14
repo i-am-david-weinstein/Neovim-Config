@@ -89,7 +89,7 @@ set noswapfile
 set splitright
 set clipboard+=unnamedplus
 set background=light
-colorscheme solarized8
+colorscheme jellybeans
 set encoding=UTF-8
 let g:airline_theme='fruit_punch'
 let g:airline_powerline_fonts = 1
