@@ -31,7 +31,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 " ** Plugin Config **
 " Coc
-let g:coc_global_extensions = ['coc-rls', 'coc-tsserver', 'coc-vimlsp', 'coc-go', 'coc-omnisharp']
+let g:coc_global_extensions = ['coc-rls', 'coc-tsserver', 'coc-vimlsp', 'coc-go', 'coc-omnisharp', 'coc-docker']
 let g:coc_user_config = {"coc.preferences.formatOnSaveFiletypes": ["rust", "typescript", "go"]}
 set updatetime=300
 " Always show the signcolumn, otherwise it would shift the text each time
